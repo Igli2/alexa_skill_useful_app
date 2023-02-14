@@ -1,0 +1,230 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "useful application",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "RockPaperScissorsIntent",
+          "slots": [
+            {
+              "name": "selection",
+              "type": "RockPaperScissorsSlot"
+            }
+          ],
+          "samples": [
+            "ich probiere {selection}",
+            "{selection}",
+            "ich wähle {selection}",
+            "ich nehme {selection}"
+          ]
+        },
+        {
+          "name": "JokesIntent",
+          "slots": [],
+          "samples": [
+            "irgendwas lustiges",
+            "erzähl mir was lustiges",
+            "erzähl mir einen schlechten witz",
+            "schlechter witz",
+            "erzähl mir einen witz"
+          ]
+        },
+        {
+          "name": "IdleGameIntent",
+          "slots": [],
+          "samples": [
+            "starte das spiel bitte",
+            "kannst du das spiel starten",
+            "kannst du das idle game starten",
+            "idle game",
+            "ich will das idle game spielen",
+            "ich will das spiel spielen",
+            "starte das spiel",
+            "starte das idle game"
+          ]
+        },
+        {
+          "name": "OracleIntent",
+          "slots": [],
+          "samples": [
+            "was passiert in meiner zukunft",
+            "wie sieht meine zukunft aus",
+            "prophezeihe mir die zukunft",
+            "sage mir die zukunft voraus",
+            "ich möchte eine weissagung",
+            "ich brauche eine weissagung",
+            "ich möchte eine prophezeihung",
+            "ich brauche eine prophezeihung"
+          ]
+        },
+        {
+          "name": "OracleBirthdayIntent",
+          "slots": [
+            {
+              "name": "date",
+              "type": "AMAZON.DATE",
+              "samples": [
+                "{date}"
+              ]
+            }
+          ],
+          "samples": [
+            "mein geburtstag ist am {date}",
+            "ich bin am {date} geboren",
+            "mein geburtstag ist der {date}",
+            "ich habe am {date} geburtstag"
+          ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": [
+            "ja bitte",
+            "bitte",
+            "gerne",
+            "Ja gerne",
+            "Ja"
+          ]
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": [
+            "bloß nicht",
+            "lieber nicht",
+            "lass mal",
+            "Nein danke",
+            "Neeeee",
+            "Nee",
+            "Nope",
+            "Nein"
+          ]
+        },
+        {
+          "name": "PlayerLevelIntent",
+          "slots": [],
+          "samples": [
+            "wie groß ist meine kreatur",
+            "welche größe hat meine kreatur",
+            "was ist mein spieler level",
+            "was ist mein spieler level im idle game",
+            "welches level bin ich",
+            "was ist mein idle game level",
+            "idle game level",
+            "welche stufe bin ich",
+            "Was ist mein Level"
+          ]
+        },
+        {
+          "name": "AlexinatorIntent",
+          "slots": [],
+          "samples": [
+            "versuche meine person zu erraten",
+            "vewrsuche meine figur zu erraten",
+            "ich habe eine person im kopf",
+            "kannst du meine figur erraten",
+            "ich denke an eine figur",
+            "ich denke an eine person",
+            "ich habe eine figur im kopf",
+            "ich habe da eine figur im kopf",
+            "kannst du meine person erraten",
+            "ich kenne da eine person"
+          ]
+        },
+        {
+          "name": "PrestigeInfoIntent",
+          "slots": [],
+          "samples": [
+            "was bekomme ich durch ein höheres prestige level",
+            "was ist der bonus von prestige",
+            "was ist das prestige level",
+            "was ist prestige",
+            "Was genau macht das prestige level"
+          ]
+        },
+        {
+          "name": "PrestigeIntent",
+          "slots": [],
+          "samples": [
+            "setze mein kreaturen level zurück",
+            "führe prestige durch",
+            "Ich möchte ein prestige level aufsteigen"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Papier"
+              }
+            },
+            {
+              "name": {
+                "value": "Stein"
+              }
+            },
+            {
+              "name": {
+                "value": "Schere"
+              }
+            }
+          ],
+          "name": "RockPaperScissorsSlot"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "OracleBirthdayIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "date",
+              "type": "AMAZON.DATE",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.667067683980.622399308069"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.667067683980.622399308069",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Bitte nenne dein Geburtsdatum"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "20"
+}
