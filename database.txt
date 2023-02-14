@@ -1,0 +1,58 @@
+Iron Man
+human,physicist,usa,inventor,movie,male,game,land,talk,famous,scientist,mechanic
+Albert Einstein
+human,original,inventor,physicist,switzerland,usa,nobel prize,male,land,talk,famous
+Nemo
+fish,movie,male,ocean,talk
+Barack Obama
+usa,president,original,nobel prize,male,land,talk,famous,usa
+Michael Jackson
+famous,male,singer,usa,land,musician
+Leonardo da Vinci
+famous,male,artist,inventor,musician,scientist,mechanic,sculptor,land
+
+
+physicist
+Ist deine Figur ein Physiker?,Ist dein Charakter ein Physiker?
+usa
+Ist deine Figur US-Amerikaner?,Stammt deine Figur aus den USA?,Wohnt oder lebte deine Figur in den USA?
+inventor
+Ist deine Figur ein Erfinder?,Ist deine Figur fuer Erfindungen bekannt?
+movie
+Kennt man deine Figur aus Filmen?,Spielt deine Figur eine Rolle in einem Film?
+male
+Ist deine Figur maennlich?
+game
+Spielt deine Figur in einem Spiel mit?,Kennt man deine Figur aus einem Spiel?
+land
+Lebt deine Figur ueber Wasser?
+talk
+Kann deine Figur sprechen?
+famous
+Ist deine Figur beruehmt?,Ist deine Figur aussergewoehnlich bekannt?
+human
+Ist deine Figur menschlich?,Ist deine Figur ein Mensch?
+original
+Ist deine Figur eine reelle Person?,Existiert deine Figur reell?
+switzerland
+Ist deine Figur aus der Schweiz?
+nobel prize
+Hat deine Figur einen Nobelpreis gewonnen?,Hat deine Figur den Nobelpreis erworben?
+fish
+Ist deine Figur ein Fisch?
+ocean
+Lebt deine Figur unter Wasser?,Lebt deine Figur im Ozean?
+president
+Hat deine Figur das Amt des Praesidenten eingenommen?,Ist deine Figur Praesident?
+singer
+Ist deine Figur Saenger?
+artist
+Ist deine Figur Kuenstler?,Ist deine Figur Maler?
+musician
+Ist deine Figur Musiker?
+scientist
+Ist deine Figur Naturwissenschaftler?,Ist deine Figur Wissenschaftler?
+mechanic
+Ist deine Figur Mechaniker?
+sculptor
+Ist deine Figur Bildhauer?,Ist deine Figur Steinmetz?
